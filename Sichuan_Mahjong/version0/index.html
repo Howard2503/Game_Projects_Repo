@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sichuan Mahjong</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #game-board {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .player-hand, .opponent-hand {
+      margin: 10px;
+    }
+    .tile {
+      width: 40px;
+      height: 60px;
+      margin: 5px;
+      border: 1px solid black;
+      display: inline-block;
+      text-align: center;
+      line-height: 60px;
+      background-color: lightgray;
+      cursor: pointer;
+    }
+    #action-buttons {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Sichuan Mahjong</h1>
+<div id="game-board">
+  <!-- Player hand (bottom) -->
+  <div id="player-hand" class="player-hand">
+    <!-- Tiles will be added here dynamically -->
+  </div>
+
+  <!-- AI Opponents -->
+  <div id="opponent1-hand" class="opponent-hand">Opponent 1</div>
+  <div id="opponent2-hand" class="opponent-hand">Opponent 2</div>
+  <div id="opponent3-hand" class="opponent-hand">Opponent 3</div>
+
+  <!-- Action buttons -->
+  <div id="action-buttons">
+    <button id="draw-tile">Draw Tile</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
